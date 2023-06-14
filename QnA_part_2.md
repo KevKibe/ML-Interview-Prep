@@ -67,3 +67,19 @@ possible solutions?**
 **What can go wrong if you tune hyperparameters using the test set?**
 - It can lead to Overfitting
 
+**K-Means Algorithm**
+- AN algorithm used to group similar datapoints together. It partitions a dataset into k clusters where each datapoint belongs to the 
+  cluster with the nearest mean/centroid.
+- It works by first selecting k clusters and then each data point is assigned to the nearest centroid depending on the eucleidean distance. This is done repetitively until convergence/ the centroid o longer change
+- The quality of the algorithm can be measured by metrics such as the silhouette score
+
+**KNN Algorithm**
+- A non-parametic(doesnt make assumptions about data) supervised ML algorithm used for regression and classification tasks.
+- The algorithm works by finding the k-nearest data points inthe training set based on the euclidean distance 
+- In classification, a label is assigned to a new data point by based on the majority label of it k-nearest neighbours.
+- In regression, it calculates the value of the target variable by taking the weighted average of the value of target variable of its k-nearest neighbours.
+
+
+
+
+
