@@ -39,8 +39,27 @@
 - An ensemble of decision trees used for classification and predictive modeling. Instead of relying on  a single decision tree, it combines predictions from multiple decision trees to make accurate predictions.
 - Numerous decision tree algorithms are individually trained using different samples from the training dataset in a method called "bagging". Once trained, the random forest takes the same data and feeds it into decision tree, produces a prediction and tallies the results. The most common prediction is selected as teh final prediction. 
     
-  
-  
+**Variance and Bias in ML Models**
+- Bias refers to approximating a real-world problem with a simplified model. It is the difference between the average prediction of the model and the true value we are trying to predict. 
+- A high bias model leads to underfitting(oversimplifying the underlying patterns in data) which leads to low variance and low performance on the train and test sets beacause the model is too simple for the complex dataset.
+- Variance is the measure of sensitivity of a model to changes in the training data. 
+- A high variance is more complex and has a greater capacity to fit the training data and capture random fluctuations in the data.
+- However, this can lead to overfitting where the model becomes too specific on training data and fails on new unseen data thus low bias and high variance.
+
+**Dimensionality Reduction Techniques**
+**Principal Component Analysis**
+- An unsupervised learning method that turns high dimension data into low dimension space.
+- It identifies direction/ principal components along which data varies the most.
+- It achieves dimensionality reduction by projecting data onto selected principal components, discarding components with lower variance.
+
+**t-Distributed Stochastic Neighbour Embedding(t-SNE)**
+- a non-linear dimensionality reduction technique used to visualize high dimension data into two or three dimensions.
+- it emphasizes local relationships between data points by preserving the similarities and disimilarities between them.
+- it uses teh probabilistic approach to model the similarity of data points focusing on preserving the relationships in the lower dimension space.
+
+**Evaluation Metrics**
+
+
   
   
   
