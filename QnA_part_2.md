@@ -79,6 +79,22 @@ possible solutions?**
 - In classification, a label is assigned to a new data point by based on the majority label of it k-nearest neighbours.
 - In regression, it calculates the value of the target variable by taking the weighted average of the value of target variable of its k-nearest neighbours.
 
+**Precision**
+- ratio of several events you can correctly recall to total number of events recalled **TP/(TP+FP)**
+
+**Recall**
+- The ratio of the number of events you can recall the number of total events.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
