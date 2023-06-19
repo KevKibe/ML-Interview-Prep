@@ -57,7 +57,52 @@
 - it emphasizes local relationships between data points by preserving the similarities and disimilarities between them.
 - it uses teh probabilistic approach to model the similarity of data points focusing on preserving the relationships in the lower dimension space.
 
-**Evaluation Metrics**
+**Decision Tree Classification**
+-a supervised learning algorithm that breaks down the dataset into small subsets while developing a decision tree with branches and nodes.
+- pruning in decision trees is a technique that reduces complexity of the classifier by wreducing size of decision trees and hence improving predictive accuracy.
+
+**Kernel SVM**
+- an algorithm for pattern analysis. Works by using a kernel function to map the original data into high dimensional space where it  is easier to seperate data using linear classifier.
+
+**Covariance**
+- measures the joint variability of two variables and can take any value.
+
+**Correlation**
+- is a normalized version of covariance that ranges from -1 to 1. A value of 1 indicates perfect positive linear relationship between the two variables while -1 indicates perfect negative linear relationship. 0 indicates no linear relationship.
+
+**Ensemble Learning**
+- A combination of results obtained from ultiple machine learning models to increase accuracy of improved decision-making.
+
+**Cross-Validation**
+- a resamping technique that uses different parts of a dataset to train and test aN ML algorithm on different iterations.
+- K-Fold Cross Validation is the most popular technique that divides the whole dataset into K sets of equal sizes.
+
+**Evaluation Metrics in Classification**
+- Accuracy: measures the proportion of correctly classified instances to the total number of instances. 
+
+- Precision: It calculates the ratio of true positive predictions to the total positive predictions.
+
+- Recall (Sensitivity or True Positive Rate): It calculates the ratio of true positive predictions to the total actual positive instances. It indicates the model's ability to correctly identify positive instances and is useful when the cost of false negatives is high.
+
+- F1-Score: It combines precision and recall into a single metric by taking their harmonic mean. It provides a balanced measure of the model's performance.
+
+- Area Under the ROC Curve (AUC-ROC): It represents the trade-off between the true positive rate and the false positive rate across different probability thresholds. A higher AUC-ROC value indicates better discrimination ability of the model.
+
+- Confusion Matrix: It provides a tabular representation of the model's performance, showing the true positives, true negatives, false positives, and false negatives.
+
+**Evaluation Metrics in Regression**
+- Mean Absolute Error (MAE): calculates the average absolute difference between the predicted and actual values. It is less sensitive to outliers compared to the mean squared error.
+
+- Mean Squared Error (MSE): calculates the average squared difference between the predicted and actual values. It amplifies the impact of large errors due to the squaring operation.
+
+- Root Mean Squared Error (RMSE): It is the square root of the mean squared error and provides a measure of the average magnitude of the errors in the predicted values.
+
+- R-squared (Coefficient of Determination): It measures the proportion of the variance in the target variable that can be explained by the model. It ranges from 0 to 1, with a higher value indicating a better fit.
+
+**Clustering Evaluation Metrics**
+- Adjusted Rand Index (ARI): It measures the similarity between the clustering results and the ground truth labels, adjusting for chance. It ranges from -1 to 1, with a higher value indicating better clustering.
+
+- Silhouette Coefficient: It evaluates the compactness and separation of clusters based on the average distance between instances within a cluster and the average distance to the nearest neighboring cluster. It ranges from -1 to 1, with a higher value indicating better clustering.
 
 
   
