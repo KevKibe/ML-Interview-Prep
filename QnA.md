@@ -118,7 +118,11 @@
 3. Evaluate and perform cross-validation to select the best model
 4. Deployment of teh model and monitoring of performance
 
-**
+**What are the different methods to split a tree in a decision tree algorithm?**
+- Reduction in Variance: This method is used in regression decision trees. It measures the reduction in variance achieved by splitting the data using a particular predictor variable. The split that results in the greatest reduction in variance is chosen as the best split
+- Gini Impurity in Decision Tree: This is the probability of misclassifying a randomly chosen element in the node if it were randomly labeled according to the distribution of labels in that node. The split that minimizes the Gini index/impurity is chosen as the best split
+- Chi-squared Test: This is a test that compares the observed frequency distribution of categorical variable and the expected frequency distribution. It is used to measure the dependency between the target variable and the predictor variables at each potential split. The split with the highest chi-squared value is selected.
+- Information Gain: Information gain is based on the concept of entropy, which measures the average amount of information required to classify a sample in a node. It calculates the reduction in entropy achieved by a particular split. The split that maximizes the information gain is selected as the best split.
 
   
   
