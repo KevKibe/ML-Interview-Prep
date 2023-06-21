@@ -104,6 +104,21 @@
 
 - Silhouette Coefficient: It evaluates the compactness and separation of clusters based on the average distance between instances within a cluster and the average distance to the nearest neighboring cluster. It ranges from -1 to 1, with a higher value indicating better clustering.
 
+**How do e-commerce websites recommend things to buy?**
+- The websites use recommendation systems to suggest products to customers. The systems are implemented through:
+  1. Collaborative filtering works by assuming users who bought similar products in the past will repeat the pattern in future.
+  2. Content Based filtering uses data from cookies to understand likes and dislikes of each user.
+  3. Hybrid filtering which uses both filters.
+
+**How do you design an email spam filter?**
+- The approaches to this problem are; using Bayesian filters that compare the content of the email toa database of spam emails, content-based filters that examine the content of the email and look for keywords associated with spam, heuristic filters which just checkthe header.
+- Steps when using ML techniques.
+1. Understand the problem and establishing the goal as classifying incoming emails as spam or not with high accuracy and minimal false positives and false negatives.
+2. Collect data of emails with a labelof either spam or not and train a supervised machine learning algorithm on the data
+3. Evaluate and perform cross-validation to select the best model
+4. Deployment of teh model and monitoring of performance
+
+**
 
   
   
