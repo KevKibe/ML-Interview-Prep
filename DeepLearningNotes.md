@@ -99,7 +99,7 @@ model.fit(X-train, y_train, validation_data=(X_test, y_test), epochs=3)
 5. AlexNet - large scale image recognition.
 6. MobileNet - Mobile and embedded vision applications, real-time object detection
 7. VGGNet - large scale image recognition.
-More [info](https://vitalflux.com/different-types-of-cnn-architectures-explained-examples/)
+- For More [info](https://vitalflux.com/different-types-of-cnn-architectures-explained-examples/)
 
 ## Recurrent Neural Networks
 - A type of neural network designed to process sequential data and have recurrent connections to allow them to maintain internal state over time. They are used in NLP tasks such as language modelling,text generation.
@@ -140,7 +140,7 @@ predictions = model.predict(input_data.reshape(5, 3, 1))
 print("Predictions:")
 print(predictions)
 ```
-**Types of RNN architecture**
+**Types of RNN architectures**
 1. Long Short-term Memory (LSTM) Networks - addresses the vanishing gradient problem in standard RNNs by using a more complex memory cell structure by effectively capture long-term dependencies in sequential data.
 2. Gated Recurrent Unit(GRU) Networks - they capture long-term dependencies. They are similar to LSTMs but have a simplified architecture with fewer gates, making them computationally more efficient.
 3. Bidirectional RNN - designed to process inputsequences in forward and backward directions. This captures past and future context which is useful for speech recognition an natural language processing.
@@ -149,6 +149,8 @@ print(predictions)
 
 ## Transfer Learning
 - A technique where a pre-trained model is used as a startig point for training a new model on a different but related task. For example, a pretrained CNN model trained on large image classification dataset such as Image Net can be used as a feature extractorfor an image classification task with a smaller dataset.
+- Can b e done through feature extraction where only the last layer of the model is trained and fine-tuning where all the layers of the model are trained.
+- Feature extraction is faster and easier but may have lower accuracy but fine-tuning is more time and computation consuming but has higher accuracy. 
 ```
 from keras.applications.vgg16 import VGG16
 # load the pretrained model
