@@ -92,6 +92,15 @@ moddel.add(Dense(10, activation='relu'))                                        
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 model.fit(X-train, y_train, validation_data=(X_test, y_test), epochs=3)
 ```
+**Types of CNN Architectures**
+1. LeNet - recognizing handwritten and machine-printed characters.
+2. GoogLeNet - large scale image recognition.
+3. ResNet - large scale image recognition.
+5. AlexNet - large scale image recognition.
+6. MobileNet - Mobile and embedded vision applications, real-time object detection
+7. VGGNet - large scale image recognition.
+More [info](https://vitalflux.com/different-types-of-cnn-architectures-explained-examples/)
+
 ## Recurrent Neural Networks
 - A type of neural network designed to process sequential data and have recurrent connections to allow them to maintain internal state over time. They are used in NLP tasks such as language modelling,text generation.
 - It works by processing sequential data one element at a time. At each step,the RNN takes in an input and updates its internal state based on this input and its previous state. The output of the RNN at each time step is calculated based on its updated internal state.
@@ -130,7 +139,14 @@ model.fit(input_data.reshape(5, 3, 1), target_data, epochs=10, batch_size=1)
 predictions = model.predict(input_data.reshape(5, 3, 1))
 print("Predictions:")
 print(predictions)
-```    
+```
+**Types of RNN architecture**
+1. Long Short-term Memory (LSTM) Networks - addresses the vanishing gradient problem in standard RNNs by using a more complex memory cell structure by effectively capture long-term dependencies in sequential data.
+2. Gated Recurrent Unit(GRU) Networks - they capture long-term dependencies. They are similar to LSTMs but have a simplified architecture with fewer gates, making them computationally more efficient.
+3. Bidirectional RNN - designed to process inputsequences in forward and backward directions. This captures past and future context which is useful for speech recognition an natural language processing.
+4. Encode-Decoder - they consist of 2 RNNS, an encoder that processes the input sequence and produces a fixed-length vector representation and a decoder network that generates the output sequence based on the encoder's representation.
+5. Attention Mechanism - a tehnique used to improve RNNS by allowing the network to attend to different parts of the input sequence selectively rather than treating all parts equally.
+
 ## Transfer Learning
 - A technique where a pre-trained model is used as a startig point for training a new model on a different but related task. For example, a pretrained CNN model trained on large image classification dataset such as Image Net can be used as a feature extractorfor an image classification task with a smaller dataset.
 ```
